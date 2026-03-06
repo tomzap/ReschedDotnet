@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/ReschedApi/">
+    <Project Path="ReschedApi/ReschedApi.csproj" />
+  </Folder>
+</Solution>
