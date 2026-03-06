@@ -1,0 +1,4 @@
+> dotnet new webapi --use-controllers -o ApiTodoDemo
+> dotnet add package Microsoft.EntityFramewordCore.InMemory
+> dotnet dev-certs https --trust
+> dotnet run --launch-profile https

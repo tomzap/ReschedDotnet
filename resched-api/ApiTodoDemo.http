@@ -1,0 +1,6 @@
+@ApiTodoDemo_HostAddress = http://localhost:5151
+
+GET {{ApiTodoDemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
