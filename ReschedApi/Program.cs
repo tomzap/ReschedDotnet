@@ -13,10 +13,9 @@ builder.Services.AddOpenApiDocument(config =>
 });
 var app = builder.Build();
 
-app.UseFileServer();
-
 if (app.Environment.IsDevelopment())
 {
+    app.UseFileServer();
     app.UseOpenApi();
     app.UseSwaggerUi(config =>
     {

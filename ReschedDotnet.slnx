@@ -2,4 +2,5 @@
   <Folder Name="/ReschedApi/">
     <Project Path="ReschedApi/ReschedApi.csproj" />
   </Folder>
+  <Project Path="ReschedApi.Tests/ReschedApi.Tests.csproj" />
 </Solution>
