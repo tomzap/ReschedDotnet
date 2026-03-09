@@ -17,20 +17,17 @@ public class BasicTests
         _factory.Dispose();
     }
 
-    [DatapointSource]
-    public string[] values = ["/todoitems"];
-
-    [Theory]
-    public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
+    [Test]
+    async public Task  GetTodosTest()
     {
         // Arrange
         var client = _factory.CreateClient();
 
         // Act
-        var response = await client.GetAsync(url);
+        var response = await client.GetAsync("/todoitems");
 
         // Assert
         response.EnsureSuccessStatusCode(); // Status Code 200-299
-        Assert.That(response.Content.Headers.ContentType.ToString(), Is.EqualTo("text/html; charset=utf-8"));
+        Assert.That(response.Content.Headers.ContentType.ToString(), Is.EqualTo("application/json; charset=utf-8"));        
     }
 }
