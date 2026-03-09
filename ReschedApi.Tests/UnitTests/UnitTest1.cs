@@ -18,7 +18,7 @@ public class BasicTests
     }
 
     [DatapointSource]
-    public string[] values = ["/", "/Index", "/About", "/Privacy", "/Contact"];
+    public string[] values = ["/todoitems"];
 
     [Theory]
     public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string url)
